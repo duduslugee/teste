@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, anterior = 0, atual = 1, proximo = 1;
+    int pertence = 0;
+
+    // Solicita ao usuário um número para verificar se pertence à sequência de Fibonacci
+    printf("Digite um número: ");
+    scanf("%d", &n);
+
+    // Calcula a sequência de Fibonacci até atingir ou ultrapassar o número informado
+    for (i = 1; i <= n; i++) {
+        if (atual == n) {
+            pertence = 1;
+            break;
+        }
+        proximo = anterior + atual;
+        anterior = atual;
+        atual = proximo;
+    }
+
+    // Exibe uma mensagem informando se o número pertence ou não à sequência de Fibonacci
+    if (pertence) {
+        printf("%d pertence à sequência de Fibonacci.", n);
+    } else {
+        printf("%d não pertence à sequência de Fibonacci.", n);
+    }
+
+    return 0;
+}
