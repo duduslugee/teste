@@ -1,1 +1,28 @@
-asdadsa
+
+Distância total entre Ribeirão Preto e Franca: d = 100 km
+Distância do ponto médio para cada cidade: d/2 = 50 km
+
+Velocidade do carro: v_carro = 110 km/h
+Velocidade do caminhão: v_caminhão = 80 km/h
+
+Tempo que o carro leva para chegar ao ponto médio:
+t_carro = d/2 / v_carro
+t_carro = 50 / 110
+t_carro = 0,45 horas
+
+Tempo que o caminhão leva para chegar ao ponto médio (considerando 2 pedágios de 5 minutos cada):
+t_caminhão = d/2 / v_caminhão + 2 x 5 minutos / 60 minutos
+t_caminhão = 50 / 80 + 0,167
+t_caminhão = 0,792 horas
+
+Distância percorrida pelo carro até o ponto médio:
+d_carro = v_carro x t_carro
+d_carro = 110 x 0,45
+d_carro = 49,5 km
+
+Distância percorrida pelo caminhão até o ponto médio:
+d_caminhão = v_caminhão x t_caminhão
+d_caminhão = 80 x 0,792
+d_caminhão = 63,36 km
+
+Como o carro já percorreu 49,5 km quando se encontra com o caminhão e o caminhão percorreu apenas 63,36 km, o carro está mais próximo de Ribeirão Preto.
